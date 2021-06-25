@@ -7,4 +7,5 @@ for i in range(0,10001,1):
     if self_num(i) in for_answer:
         for_answer.remove(self_num(i))
 
-print(for_answer)
+for j in for_answer:
+    print(j)
