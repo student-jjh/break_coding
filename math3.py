@@ -1,14 +1,21 @@
 #분수찾기 
-for_list=[]
+k=int(input(""))
+
 n=1
-while n*(n+1)/2<=10000000:
-   for_list.append(n*(n+1)/2)
-   n+=1
-for_list.append(10000000)
-_num=int(input(""))
-for i in range(len(for_list)):
-    if for_list[i]>=_num:
-        a=int(_num-for_list[i-1])
-        b=int(i-a+2)
-        print(str(b)+"/"+str(a))
-        break
+if k==1:
+    print('1/1')
+else:
+    while (n+1)*(n+2)/2 < k:
+        n+=1
+
+    need=k-((n)*(n+1)/2)-1
+    if (n+1)%2==0: 
+        x=int(1+need)
+        y=int(n+1-need)
+
+    else:
+        x=int(n+1-need)
+        y=int(1+need)
+
+
+    print(str(x)+'/'+str(y))
