@@ -1,6 +1,6 @@
 def hotel(H,W,N):
     if N%H==0:
-        room_num=H//H
+        room_num=N//H
         floor=H
     else:
         room_num=N//H+1
@@ -15,4 +15,4 @@ def hotel(H,W,N):
 a=int(input(""))
 for i in range(a):
     h,w,n=map(int,input("").split(" "))
-    print(hotel(h,w,n))
+    print(int(hotel(h,w,n)))
