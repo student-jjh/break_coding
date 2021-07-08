@@ -1,4 +1,4 @@
-cro=['c=','c-','lj','nj','s=','z=']
+cro=['c=','c-','d-','lj','nj','s=','z=']
 cro2=['dz=']
 
 for_min=0
