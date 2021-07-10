@@ -1,15 +1,10 @@
 def num_find(a):
-    for_return=1
-
     if a==1:
-        for_return=-1
-    if a%2==0:
-        for_return=-1
-    for i in range(3,int(a/2),2):
+        return False
+    for i in range(2,int(a**0.5)+1,1):
         if a%i ==0:
-            for_return=-1
-
-    return for_return
+            return False
+    return True
 
 while True:
     num=int(input(""))
@@ -17,7 +12,7 @@ while True:
         break
     count=0
     for i in range(num+1,2*num+1):
-        if num_find(i)==1:
+        if num_find(i):
             count+=1
     
     print(count)
