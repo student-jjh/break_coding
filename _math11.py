@@ -16,7 +16,7 @@ while True:
     if k==0:
         break
     count=0
-    for i in range(k,k*2+1,1):
+    for i in range(k+1,k*2+1,1):
         if array_for_answer[i]:
             count+=1
     print(count)
