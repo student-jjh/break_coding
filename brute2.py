@@ -6,3 +6,5 @@ for i in range(int(N)):
     if sum_num(str(i))==int(N):
         print(i)
         break
+    if i == int(N)-1:
+        print(0)
