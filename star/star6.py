@@ -5,4 +5,5 @@ def star(N):
     for i in range(N-1,0,-1):
         print(i*'*'+(N-i)*2*" "+i*'*')
 
-star(5)
+N=int(input(""))
+star(N)
