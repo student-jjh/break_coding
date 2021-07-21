@@ -1,37 +1,35 @@
-def ok_sequence(lists):
-	count=1
-	start=0
-	for_answer=[]
-	for_check=[]
-	for_return=[]
-	for j in range(len(lists),0,-1):
-		for_check.append(j)
-	while count<lists[0]:
-		if start<lists[count]:
-			while lists[count] not in for_answer:
-				for_answer.append(for_check.pop())
-				for_return.append('+')
-			start=lists[count]
-			for_answer.pop()
-			for_return.append('-')
-		else:
-			if for_answer[-1]!=lists[count]:
-				return "NO"
-			else:
-				for_answer.pop()
-				for_return.append('-')
-		count+=1
-	for_return.append('-')
-	return for_return	 
-			 
+import sys
 
-number=int(input(''))
-lista=[]
-for i in range(number):
-    k=int(input(""))
-    lista.append(k)
-if ok_sequence(lista)=='NO':
-	print("No")
+n=int(input(""))
+
+
+def stack(n):
+    
+    list_of_num=[i for i in range(n,0,-1)]
+    stack=[]
+    for_print=[]
+    what_we_want=[]
+    for i in range(n):
+        what_we_want.append(int(sys.stdin.readline().rstrip()))
+    for input_num in what_we_want:
+        if input_num in list_of_num:
+            while list_of_num[-1] != input_num and list_of_num != []:
+                stack.append(list_of_num.pop())
+                for_print.append("+")
+        if list_of_num != [] and list_of_num[-1]==input_num:
+            stack.append(list_of_num.pop())
+            for_print.append("+")
+        if stack[-1]==input_num:
+            stack.pop()
+            for_print.append("-")
+        else:
+            for_print = "NO"
+            break
+ 
+    return for_print
+a=stack(n)
+if a =='NO':
+    print(a)
 else:
-	for i in ok_sequence(lista):
-		print(i)
+    for i in a:
+        print(i)
