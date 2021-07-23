@@ -1,4 +1,5 @@
-pipe=input()
+import sys
+pipe= sys.stdin.readline().rstrip()
 pipe_list=pipe.split("()")
 total_count=0
 now_count=0
