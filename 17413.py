@@ -26,7 +26,7 @@ for j in range(len(for_split_1)):
         list_of_split.append(S[for_split_1[j]:for_split_2[j]+1])
 
     if j == len(for_split_1)-1 and S[for_split_2[j]+1:]!="":
-        list_of_split.append(S[for_split_2[j]:])
+        list_of_split.append(S[for_split_2[j]+1:])
 
 if list_of_split==[]:
     list_of_split=S.split(" ")
