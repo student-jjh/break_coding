@@ -1,6 +1,3 @@
-a='12345'
+a_list=list(map(list,input().split(" ")))
 
-print('2' in a)
-
-a=[1,2,3,4,5]
-print(a[:6])
+print(a_list)
