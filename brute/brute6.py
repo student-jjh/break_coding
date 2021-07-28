@@ -15,8 +15,6 @@ for i in range(M-7):
                     w_count+=1
                 if background[i+k][j+l] != list_b_first[k][l]:
                     b_count+=1
-        print(w_count)
-        print(b_count)
         if w_count<min:
             min=w_count
         if b_count<min:
