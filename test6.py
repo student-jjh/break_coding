@@ -1,2 +1,2 @@
-a='3+3'
-print(int(a))
+for i in range(1):
+    print(1)

@@ -17,10 +17,7 @@ while i <= a and i<=b:
         i+=1
     else:
         for_cal.append(i)
-    #print(i)
-    #print(for_cal)
-    #print(a)
-    #print(b)
+
 for_cal.append(a)
 for_cal.append(b)
 answer=1
