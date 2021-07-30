@@ -1,3 +1,4 @@
 a=input("")
 _a=sorted(a)
-print(_a)
+for i in _a[::-1]:
+    print(i,end="")
