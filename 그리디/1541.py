@@ -1,7 +1,6 @@
 n=input()
 n_list=n.split("-")
 for_cal_list=[]
-print(n_list)
 for i in n_list:
     i_cal=i.split("+")
     total=0
@@ -11,7 +10,6 @@ for i in n_list:
         else:
             total+=int(j)
     for_cal_list.append(total)
-    print(for_cal_list)
 _total=for_cal_list[0]
 if len(n_list) !=1:
     for i in for_cal_list[1:]:
