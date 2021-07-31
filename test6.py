@@ -1,4 +1,3 @@
-a=(1)
-b=(1,)
-print(a)
+a='b=1+1'
+exec(a)
 print(b)
