@@ -14,5 +14,4 @@ def zeroCount(strs):
     return count
 
 N=int(input())
-print(fac(10))
 print(zeroCount(fac(N)))
