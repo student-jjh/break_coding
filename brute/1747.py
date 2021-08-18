@@ -14,11 +14,11 @@ def pal(n):
         if n[i] != n[-i-1]:
             return False
     return True
-array_for_answer=ara(10000000)
+array_for_answer=ara(10004000)
 
 N=int(input(""))
 
-for i in range(N,1000001,1):
+for i in range(N,10004000,1):
     if array_for_answer[i] and pal(str(i)):
         print(i)
         break
