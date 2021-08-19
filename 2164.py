@@ -1,10 +1,11 @@
-N=int(input(""))
+from collections import deque
 
-list_of_card=[i for i in range(N,0,-1)]
-while len(list_of_card)!=1:
-    list_of_card.pop()
-    temp=list_of_card.pop()
-    list_of_card.insert(0,temp)
+N = int(input("N = "))
+card = deque(range(1,N+1))
+    
+while len(card)>1:
+    card.remove(card[0])
+    c=card.popleft()
+    card.append(c)
 
-
-print(list_of_card[0])
+print(card[0])
