@@ -10,7 +10,10 @@ if M !=0:
 def isPossibe(number):
     cnt = 0
     if number == 0:
-        return 1
+        if broken[0]:
+            return 1
+        else:
+            return False
     while number!=0:
         if broken[number%10]:
             cnt +=1
